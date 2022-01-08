@@ -50,6 +50,10 @@ relevancia de esta red en el desarrollo del análisis de redes en
 y otra red más contemporánea recolectada por Rossi y Magnani (
 [2018](https://arxiv.org/pdf/1501.01666.pdf))
 
+Muchísimas gracias a [Ulrik
+Brandes](https://sn.ethz.ch/profile.html?persid=239462) por proveer
+parte de la información y documentación de la base de datos de EIES!
+
 ``` r
 #### FREEMAN AND FREEMAN ####
 # install.packages("devtools")

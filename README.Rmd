@@ -48,6 +48,9 @@ En este workshop trabajaremos con tres paquetes escritos en R:
 ## Redes
 
 Para este tutorial se utilizán dos bases de datos. La primera fue recolectada por Freeman y Freeman (1979, 1980) (contexto sobre la relevancia de esta red en el desarrollo del análisis de redes en [Freeman 2005](https://www.researchgate.net/publication/239228599_The_Development_of_Social_Network_Analysis)) y otra red más contemporánea recolectada por Rossi y Magnani ( [2018](https://arxiv.org/pdf/1501.01666.pdf))
+
+Muchísimas gracias a [Ulrik Brandes](https://sn.ethz.ch/profile.html?persid=239462) por proveer parte de la información y documentación de la base de datos de EIES!
+
 ```{r, results='hide', warning=FALSE, message=FALSE}
 #### FREEMAN AND FREEMAN ####
 # install.packages("devtools")
