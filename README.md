@@ -3,8 +3,7 @@
 
 Curso impartido por:
 
-🖊 [Alejandro
-Espinosa-Rada](https://www.research.manchester.ac.uk/portal/en/researchers/alejandro-espinosa(4ed72800-e02b-47a8-a958-640b6a07f563).html)
+🖊 [Alejandro Espinosa-Rada](https://github.com/anespinosa)
 
 -   [![Follow me on
     Twitter](https://img.shields.io/badge/Follow%20me%20on%20Twitter-9cf.svg)](https://twitter.com/aespinosarada)
@@ -30,6 +29,16 @@ setwd()
 ``` r
 rm(list=ls())
 ```
+
+En este workshop trabajaremos con tres paquetes escritos en R:
+
+-   [`igraph`](https://igraph.org/r/): uno de los paquetes más
+    utilizados para analizar redes en R.
+-   [`classicnets`](https://github.com/anespinosa/classicnets):
+    repositorio con datos de redes sociales clásicas
+-   [`netmem`](https://github.com/anespinosa/netmem): paquete (en
+    proceso de construcción) que utiliza matrices para el análisis de
+    redes
 
 ## Redes
 
@@ -83,7 +92,7 @@ Ego-redes
 plot(gaucs$work)
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 ``` r
 # Una pequeña función para extraer los vecinos de ego sin considerar a ego!
@@ -122,7 +131,7 @@ egoU6 <- igraph::induced_subgraph(gaucs$work, unlist(egoU6))
 plot(egoU6)
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
 
 ``` r
 # Ejercicio: Cuál es la diferencia entre 'ego_net' y 'induced_sugraph' de igraph para este ejemplo?
@@ -144,7 +153,7 @@ rowSums(matrix)
 plot(table(rowSums(matrix))) # Efecto Mateo? (Merton, 1968)
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 ``` r
 # Promedio de grados
@@ -233,13 +242,13 @@ colSums(matrix)
 plot(table(rowSums(matrix)))
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
 ``` r
 plot(table(colSums(matrix)))
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-13-2.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-13-2.png)<!-- -->
 
 Reciprocidad en la red
 
@@ -280,7 +289,7 @@ plot(graph.adjacency(matrix, mode = c('directed')),
      edge.arrow.size=0.3, vertex.size=5, vertex.label=NA)
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 ``` r
 # Elegir un actor de forma aleatoria!
@@ -294,7 +303,7 @@ plot(graph.adjacency(ego_net(matrix, actor = 'Lin Freeman'),
      main = "Ego-red de Linton Freeman")
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-15-2.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-15-2.png)<!-- -->
 
 ``` r
 plot(graph.adjacency(ego_net(matrix, actor = 'Ev Rogers'),
@@ -303,7 +312,7 @@ plot(graph.adjacency(ego_net(matrix, actor = 'Ev Rogers'),
      main = "Ego-red de Everett Rogers")
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-15-3.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-15-3.png)<!-- -->
 
 ``` r
 plot(graph.adjacency(ego_net(matrix, actor = 'Nick Mullins'),
@@ -312,7 +321,7 @@ plot(graph.adjacency(ego_net(matrix, actor = 'Nick Mullins'),
      main = "Ego-red de Nicholas Mullins")
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-15-4.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-15-4.png)<!-- -->
 
 ``` r
 plot(graph.adjacency(ego_net(matrix, actor = 'Mark Granovetter'),
@@ -321,7 +330,7 @@ plot(graph.adjacency(ego_net(matrix, actor = 'Mark Granovetter'),
      main = "Ego-red de Mark Granovetter")
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-15-5.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-15-5.png)<!-- -->
 
 Cuántos vinculos tienen los investigadores de la red EIES que adscriben
 a la misma disciplina y cuántos vínculos hay entre actores de distintas
@@ -445,7 +454,7 @@ plot(deg, ev, xlab="Degree", ylab="Eigenvector", col="blue")
 plot(betw, ev, xlab="Betweenness", ylab="Eigenvector", col="blue")
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
 
 ``` r
 cor(ev, deg)
@@ -477,4 +486,4 @@ plot(g, layout=layout,
      vertex.label.cex=0.6, main="Eigenvector Centrality")
 ```
 
-![](sna_files/figure-gfm/unnamed-chunk-19-2.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-19-2.png)<!-- -->

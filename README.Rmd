@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Curso impartido por: 
 
-`r emo::ji("pen")` [Alejandro Espinosa-Rada](https://www.research.manchester.ac.uk/portal/en/researchers/alejandro-espinosa(4ed72800-e02b-47a8-a958-640b6a07f563).html) 
+`r emo::ji("pen")` [Alejandro Espinosa-Rada](https://github.com/anespinosa) 
 
 - [![Follow me on Twitter](https://img.shields.io/badge/Follow me on Twitter-9cf.svg)](https://twitter.com/aespinosarada)
 - `r emo::ji("school")` [Social Networks Lab](https://sn.ethz.ch), ETH Zürich
@@ -38,6 +38,12 @@ setwd("~/Dropbox/ETH_courses/2022cts-chile")
 ```{r}
 rm(list=ls())
 ```
+
+En este workshop trabajaremos con tres paquetes escritos en R:
+
+- [`igraph`](https://igraph.org/r/): uno de los paquetes más utilizados para analizar redes en R.
+- [`classicnets`](https://github.com/anespinosa/classicnets): repositorio con datos de redes sociales clásicas
+- [`netmem`](https://github.com/anespinosa/netmem): paquete (en proceso de construcción) que utiliza matrices para el análisis de redes
 
 ## Redes
 
