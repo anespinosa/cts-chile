@@ -434,7 +434,8 @@ blau(eies$discipline, normalized = TRUE)
 # blau(c(rep(1, 4), rep(2, 12), rep(3, 9)), normalized = TRUE)
 ```
 
-Medidas de centralidades
+Algunas medidas de centralidad ([tabla periódica de otras
+medidas](http://schochastics.net/sna/periodic.html))
 
 ``` r
 g <- graph.adjacency(matrix)
