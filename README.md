@@ -81,6 +81,8 @@ múltiples-métodos para el análisis de la información.
     (español e inglés) de las Ciencias de Redes Sociales auspiciado por
     la *International Network for Social Network Analysis*
     [(INSNA)](https://www.insna.org/news/knitting-networks-podcast).
+-   [Qué son las Ciencias de Redes
+    Sociales?](https://chisocnet.org/what-is-social-network-science/)
 -   La Sociedad Chilena de Ciencias de Redes Sociales
     [(CHISOCNET)](https://chisocnet.org): Para tener accesso al mailing
     list por favor escribir a Alejandro Espinosa-Rada

@@ -61,6 +61,7 @@ Históricamente el análisis de redes sociales se ha concentrado principalmente 
 ## Otros recursos en Español
 
 - Podcast [Knitting Networks/Tejiendo Redes](https://anchor.fm/tejiendoredes). El podcast bilingüe (español e inglés) de las Ciencias de Redes Sociales auspiciado por la *International Network for Social Network Analysis* [(INSNA)](https://www.insna.org/news/knitting-networks-podcast). 
+- [Qué son las Ciencias de Redes Sociales?](https://chisocnet.org/what-is-social-network-science/)
 - La Sociedad Chilena de Ciencias de Redes Sociales [(CHISOCNET)](https://chisocnet.org): Para tener accesso al mailing list por favor escribir a Alejandro Espinosa-Rada
 - [Análisis de Redes Sociales en Chile](https://chisocnet.org/social-network-in-chile/)
 - [Análisis de Redes Sociales en Íbero América](https://chisocnet.org/social-network-in-ibero-america/)
