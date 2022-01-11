@@ -24,12 +24,14 @@ Ortiz](https://www.research.manchester.ac.uk/portal/francisca.ortiz.html)
 
 ## Programa del día
 
-**Introducción al Análisis de Redes Sociales**: 14:40 - 15:40
+**Introducción al Análisis de Redes Sociales**: 14:40 - 15:40 (CLST/UTC
+-3)
 
-**Break**: 15:40 - 15:50
+**Break**: 15:40 - 15:50 (CLST/UTC -3)
 
-**Introducción a R**: 15:50 - 16:05
+**Introducción a R**: 15:50 - 16:05 (CLST/UTC -3)
 
 **Introducción al Análisis de Redes Sociales usando R**: 16:05 - 16:50
+(CLST/UTC -3)
 
-**Dudas y comentarios**: 16:50 - 17:10
+**Dudas y comentarios**: 16:50 - 17:10 (CLST/UTC -3)
