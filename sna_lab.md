@@ -411,9 +411,9 @@ rowSums(homophily)/rowSums(matrix) # porcentaje de lazos emitidos que son homóf
 ```
 
 Índice de Peter Blau ([Blau,
-1977](https://www.jstor.org/stable/2777762)) y la normalización del
-índice de IQV (Index of Qualitative Variation) de Agresti ([Agresti y
-Agresti, 1978](https://doi.org/10.2307/270810))
+1977](https://books.google.ch/books/about/Inequality_and_Heterogeneity.html?id=jvq2AAAAIAAJ&redir_esc=y))
+y la normalización del índice de IQV (Index of Qualitative Variation) de
+Agresti ([Agresti y Agresti, 1978](https://doi.org/10.2307/270810))
 
 ``` r
 blau <- function(att, normalized = FALSE){
@@ -471,7 +471,7 @@ layout <- layout.fruchterman.reingold(g)
 plot(g,layout = layout,
      vertex.label=NA,
      edge.arrow.size=0.1,
-     main="The Electronic Information Exchange System (EIES)")
+     main="EIES")
 plot(g, layout=layout, 
      vertex.label=NA,
      vertex.size=deg*0.75, 
