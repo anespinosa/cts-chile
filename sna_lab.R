@@ -31,7 +31,7 @@ ncol(matrix) # número de nodos
 sum(matrix)/2 # número de aristas
 
 vcount(gaucs$work) == ncol(matrix)
-ecount(gaucs$work) == sum(matrix)/2 # Ejercicio: Por qué la matrix se divide por dos?
+ecount(gaucs$work) == sum(matrix)/2 # Ejercicio: Por qué la matriz se divide por dos?
 
 edgelist <- matrix_to_edgelist(matrix, digraph = FALSE)
 
@@ -94,7 +94,7 @@ mean(rowSums(matrix)); sum(rowSums(matrix))/ncol(matrix)
 egoU4 <- ego_net(matrix, actor = 'U4')
 redundancy <- mean(rowSums(egoU4))
 effective_size <- ncol(egoU4) - redundancy
-(efficiency <- effective_size/ncol(egoU4)) # Qué tan redundantes es la red de U4?
+(efficiency <- effective_size/ncol(egoU4)) # Qué tan redundante es la red de U4?
 
 ## BURT
 # install.packages("devtools")
@@ -224,7 +224,7 @@ ei.table(matrix, mixed=FALSE, att=eies$discipline) # Hay homofilia en la red?
 sim <- abs(outer(eies$discipline,eies$discipline,"=="))
 diag(sim) <- 0
 
-# Los lazos que envían los autores son ellos mismos homófilas?
+# Los lazos que envían los autores son ellos mismos homófilos?
 homophily <- ifelse(matrix&sim==1, 1, 0)
 homophily[1,] # explorando los datos...
 rowSums(homophily) # número de lazos emitidos que son homófilos

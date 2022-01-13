@@ -82,7 +82,7 @@ ncol(matrix) # número de nodos
 sum(matrix)/2 # número de aristas
 
 vcount(gaucs$work) == ncol(matrix)
-ecount(gaucs$work) == sum(matrix)/2 # Ejercicio: Por qué la matrix se divide por dos?
+ecount(gaucs$work) == sum(matrix)/2 # Ejercicio: Por qué la matriz se divide por dos?
 
 edgelist <- matrix_to_edgelist(matrix, digraph = FALSE)
 ```
