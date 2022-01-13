@@ -152,7 +152,7 @@ Considerando la teoría de los agujeros estructurales de Ronald Burt ([1995](htt
 egoU4 <- ego_net(matrix, actor = 'U4')
 redundancy <- mean(rowSums(egoU4))
 effective_size <- ncol(egoU4) - redundancy
-(efficiency <- effective_size/ncol(egoU4)) # Qué tan redundantes es la red de U4?
+(efficiency <- effective_size/ncol(egoU4)) # Qué tan redundante es la red de U4?
 ```
 
 Para calcular constreñimiento utilizaremos un paquete alternativo con ligeras modificaciones siguiento el trabajo realizado por Martin Everett y Steve Borgatti ([2020](https://doi.org/10.1016/j.socnet.2020.02.001))
@@ -310,7 +310,7 @@ ei.table(matrix, mixed=FALSE, att=eies$discipline) # Hay homofilia en la red?
 sim <- abs(outer(eies$discipline,eies$discipline,"=="))
 diag(sim) <- 0
 
-# Los lazos que envían los autores son ellos mismos homófilas?
+# Los lazos que envían los autores son ellos mismos homófilos?
 homophily <- ifelse(matrix&sim==1, 1, 0)
 homophily[1,] # explorando los datos...
 rowSums(homophily) # número de lazos emitidos que son homófilos
