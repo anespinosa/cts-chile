@@ -42,11 +42,11 @@ En este workshop trabajaremos con tres paquetes escritos en R:
 
 ## Redes
 
-Para este tutorial se utilizán dos bases de datos. La primera fue
+Para este tutorial se utilizan dos bases de datos. La primera fue
 recolectada por Freeman y Freeman (1979, 1980) (contexto sobre la
 relevancia de esta red en el desarrollo del análisis de redes en
 [Freeman
-2005](https://www.researchgate.net/publication/239228599_The_Development_of_Social_Network_Analysis))
+2004](https://www.researchgate.net/publication/239228599_The_Development_of_Social_Network_Analysis))
 y otra red más contemporánea recolectada por Rossi y Magnani (
 [2018](https://arxiv.org/pdf/1501.01666.pdf))
 
@@ -99,7 +99,7 @@ plot(gaucs$work)
 ![](sna_lab_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 ``` r
-# Una pequeña función para extraer los vecinos de ego sin considerar a ego!
+# Una pequeña función para extraer los vecinos de ego sin considerar a ego! (disponible en el paquete 'netmem')
 ego_net <- function(A, actor=NULL){
   A <- as.matrix(A)
   actor <- as.character(actor)
@@ -183,20 +183,6 @@ y Steve Borgatti ([2020](https://doi.org/10.1016/j.socnet.2020.02.001))
 # devtools::install_github("anespinosa/netmem")
 
 library(netmem)
-```
-
-    ## 
-    ## Attaching package: 'netmem'
-
-    ## The following object is masked _by_ '.GlobalEnv':
-    ## 
-    ##     ego_net
-
-    ## The following object is masked from 'package:classicnets':
-    ## 
-    ##     matrix_to_edgelist
-
-``` r
 addegoU4 <- rbind(egoU4, U4=rep(1, nrow(egoU4)))
 addegoU4 <- cbind(addegoU4, U4=rep(1, nrow(addegoU4)))
 diag(addegoU4) <- 0
@@ -341,7 +327,7 @@ a la misma disciplina y cuántos vínculos hay entre actores de distintas
 disciplinas?
 
 ``` r
-# Matriz mixta
+# Matriz mixta (disponible en el paquete 'netmem')
 mixMatrix <- function(A, att=NULL){
   if(is.null(att))stop("No attribute has been specified")
   data <- as.data.frame(cbind(label=colnames(A), att=att))
@@ -379,6 +365,7 @@ El índice E-I ([Krackhardt y Stern
 1988](https://doi.org/10.2307/2786835))
 
 ``` r
+# (Función disponible en el paquete 'netmem')
 ei.table <- function(matrix, mixed=TRUE, att=NULL)
 {
   if(!mixed){
@@ -416,6 +403,7 @@ y la normalización del índice de IQV (Index of Qualitative Variation) de
 Agresti ([Agresti y Agresti, 1978](https://doi.org/10.2307/270810))
 
 ``` r
+# (Función disponible en el paquete 'netmem')
 blau <- function(att, normalized = FALSE){
   att <- as.character(att)
   p <- (table(att)/sum(table(att)))^2
